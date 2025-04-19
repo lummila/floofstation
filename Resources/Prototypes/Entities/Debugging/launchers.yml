@@ -1,0 +1,22 @@
+﻿- type: entity
+  parent: BaseItem
+  id: LaunchUserBase
+  name: launch user debug tool
+  description: Go off, queen.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/skub.rsi
+    state: icon
+  - type: Item
+    sprite: Objects/Misc/skub.rsi
+  - type: EmitSoundOnUse
+    sound:
+      collection: Skub
+  - type: EmitSoundOnTrigger
+    sound:
+      collection: Skub
+  - type: LaunchUser
+    speed: 10
+    lifetime: 0.25
+  - type: UseDelay
+    delay: 2
